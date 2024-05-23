@@ -1,0 +1,17 @@
+# Use the official Golang image as base
+FROM golang:latest
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the local code to the container
+COPY . .
+
+# Copy the entrypoint script into the container
+COPY entrypoint.sh .
+
+# Set execute permissions for the entrypoint script
+RUN chmod +x entrypoint.sh
+
+# Specify the entrypoint script as the command to run when the container starts
+ENTRYPOINT ["./entrypoint.sh"]
