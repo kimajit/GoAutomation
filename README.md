@@ -2,7 +2,7 @@
 This repo create a Automation to Build a setup of three repos , go-app ,nextjs-app and wordpress-site will their respective ci flows  , includes Integrate linting and unit testing
 
 # prerequisite 
-setup your Github PAT and User Name  
+setup your Github PAT and github User Name in main.go you can hard code it also and you can set it to your local  
 
 # for Local Run 
 ```
